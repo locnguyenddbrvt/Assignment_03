@@ -1,0 +1,92 @@
+@media screen and (max-width: 992px) {
+    .my-container {
+        padding: 0 30px;
+        width: 100%;
+    }
+    /* banner */
+    .avatar {
+        display: none;
+    }
+    #nav-bar nav {
+        flex-direction: row;
+        gap: 5%;
+    }
+    .nav-left a:last-child {
+        border-right: 1px solid #dee2e6;
+    }
+    .nav-right a:first-child {
+        border-left: 1px solid #dee2e6;
+    }
+    .nav-left a,
+    .nav-right a {
+
+    }
+    /* about */
+    #about h1 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    #about p,
+    #about li {
+        font-size: 0.8rem;
+    }
+    /* job-info */
+    .job-info-items {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3,auto);
+    }
+    .exp {
+        grid-area: 1/1/2/2;
+    }
+    .skills {
+        grid-area: 2/1/3/2;
+    }
+    .language {
+        grid-area: 3/1/4/2;
+    }
+    .educations {
+        grid-area: 1/2/2/3;
+    }
+    .activities {
+        grid-area: 2/2/3/3;
+    }
+    .hobby {
+        grid-area: 3/2/4/3;
+    }
+    /* certificate */
+    .certificate-item {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 1.1;
+    }
+    #certificate img {
+        width: 100%;
+    }
+    .vertical-line {
+        position: absolute;
+        height: 80%;
+        left: 0;
+    }
+    .certificate-item:nth-child(2) {
+        position: relative;
+    }
+    /* project */
+    .project-info {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: repeat(3,auto);
+        font-size: 0.9rem;
+    }
+    .project-info span:last-child {
+        grid-area: 2/2/3/3;
+    }
+    .project-depiction,
+    .project-mission,
+    .project-tech {
+        font-size: 0.9rem;
+    }
+    .project-info span:first-child {
+        text-align: center;
+    }
+}
